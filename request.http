@@ -2,7 +2,36 @@ POST  http://localhost:3000/api/v1/login
 Content-Type: application/json
 
 {
-    
-    "email": "ms10@gmail.com",
-    "password":"123456"
+  
+   "email":"cr7@gmail.com",
+   "password": "123456"
+
 }
+###
+
+POST http://localhost:3000/post/createOnePost
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDdkYWE2NzAzNjYyYzJhNzQxMzZhNzkiLCJpYXQiOjE2MTkwMjM4NDB9.UIVyJwEfToOEclQGOi_eZssa9z9nRsI-bcvbtpMtfOU
+
+{
+   "content": "This is three Post "
+}
+###
+
+GET http://localhost:3000/post/getAll
+
+###
+
+PUT  http://localhost:3000/post/60805a20088cb32d2485e3c0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDdkYWE2NzAzNjYyYzJhNzQxMzZhNzkiLCJpYXQiOjE2MTkwMjM4NDB9.UIVyJwEfToOEclQGOi_eZssa9z9nRsI-bcvbtpMtfOU
+
+{
+   "content": "this is first post"
+}
+###
+
+DELETE http://localhost:3000/post/60805c64614db72fcc0be80b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDdkYWE2NzAzNjYyYzJhNzQxMzZhNzkiLCJpYXQiOjE2MTkwMjM4NDB9.UIVyJwEfToOEclQGOi_eZssa9z9nRsI-bcvbtpMtfOU
+
